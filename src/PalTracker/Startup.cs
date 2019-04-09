@@ -37,6 +37,8 @@ namespace PalTracker
                 Configuration.GetValue<string>("CF_INSTANCE_INDEX", "no value"),
                 Configuration.GetValue<string>("CF_INSTANCE_ADDR", "no value")
             ));
+
+            services.AddSingleton<ITimeEntryRepository, InMemoryTimeEntryRepository>();
            
         }
 
