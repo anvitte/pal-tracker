@@ -8,6 +8,6 @@ namespace PalTracker
 
         IDictionary<TrackedOperation, int> GetCounts { get; }
 
-        string Name { get; };
+        string Name { get; }
     }
 }
